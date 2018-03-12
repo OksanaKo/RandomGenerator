@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+{{> headers}}
+
+</head>	
+
+<body>
+	{{> menuAndOther}}
+	
+	<div class="main" id="mainP">
+		<div class = "infPanel">
+			Генератор псевдовипадкових чисел
+			<span class="_block"></span>
+		</div>
+		<div class = "mainPart">
+			<form id="algForm" class="forms" name="algForm">
+			<div id="inputDiv">
+			    <input name="count" type="number" class="form-control" id="input-count" placeholder="count" min="1" max="5000" required>
+			    <!-- <input id="number" type="number"> -->
+			</div>
+
+	            <div class="formButton">
+	             <button id="submitAlgBtn" type="submit" class="buttons">Знайти</button>
+	            </div>
+        	</form>
+			<button id="cancelAlgBtn" onclick="stop()" class="buttons" disabled>Скасувати</button>
+            <div id="demo">
+            	0%
+            </div>
+			<progress id="progressBar" value="0" max="100">
+			</progress>
+			<br/><br/>
+            <textarea id="resultArea"></textarea>
+		</div>
+	</div>
+	
+	{{>footer}}
+
+</body>
+</html>

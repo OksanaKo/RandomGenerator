@@ -1,0 +1,21 @@
+{
+  "name": "load_balancer",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server/app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "child_process": "^1.0.2",
+    "connect-mongo": "^2.0.0",
+    "connect-mongostore": "^0.1.4",
+    "cookie-parser": "^1.4.3",
+    "express": "*",
+    "express-session": "^1.15.6",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.10.8",
+    "morgan": "^1.9.0",
+    "nodemon": "^1.12.1"
+  }
+}

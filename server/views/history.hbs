@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+{{> headers}}
+
+</head>	
+
+<body>
+	{{> menuAndOther}}
+	
+	<div class="main" id="mainP">
+		<div class = "infPanel">
+			Історія
+		</div>
+		<div class = "mainPart">
+			{{getHistory history}}
+		</div>
+	</div>
+	
+	{{>footer}}
+
+</body>
+</html>
